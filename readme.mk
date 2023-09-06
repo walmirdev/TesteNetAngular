@@ -1,0 +1,2 @@
+Todos os testes foram realizados utilizando o ISS Express, uma vez que estou fazendo a chamada da rota de maneira explícita.
+Basta preencher os dados conforme formulário e clicar no botão para que seja calculado e exibido os valores sem formatação.
