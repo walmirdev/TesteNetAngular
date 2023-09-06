@@ -11,16 +11,34 @@ namespace TesteNetAngular.Services
                 throw new Exception("O valor deve ser positivo e o prazo maior que 1 mês");
             }
 
-            var bruto = valor;
+            var bruto = CalculaBruto(valor, prazo);
+            
+            var lucro = CalculaLucro(valor, bruto, prazo);
+            
+            var result = new CdbResult()
+            {
+                bruto = bruto,
+                liquido = valor + lucro
+            };
+
+            return result;
+        }
+
+        private decimal CalculaBruto(decimal valor, int prazo)
+        {
             var tb = Convert.ToDecimal(1.08);
             var cdi = Convert.ToDecimal(0.009);
             for (int i = 0; i < prazo; i++)
             {
-                bruto = bruto * (1 + (cdi * tb));
+                valor = valor * (1 + (cdi * tb));
             }
 
+            return valor;
+        }
 
-            var lucro = bruto - valor;
+        private decimal CalculaLucro(decimal valorInvestido, decimal valorBruto, int prazo)
+        {
+            var lucro = valorBruto - valorInvestido;
             if (prazo <= 6)
             {
                 lucro -= lucro * Convert.ToDecimal(0.225);
@@ -38,14 +56,7 @@ namespace TesteNetAngular.Services
                 lucro -= lucro * Convert.ToDecimal(0.15);
             }
 
-
-            var result = new CdbResult()
-            {
-                bruto = bruto,
-                liquido = valor + lucro
-            };
-
-            return result;
+            return lucro;
         }
     }
 }
