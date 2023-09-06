@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33424.131
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TesteNetAngular", "TesteNetAngular.csproj", "{F4BAE007-7431-4C2F-AFC4-61C3A484476B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CdbTests", "..\CdbTests\CdbTests.csproj", "{6E0D5291-463D-4FAA-B21F-1C3DFF745C3F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F4BAE007-7431-4C2F-AFC4-61C3A484476B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F4BAE007-7431-4C2F-AFC4-61C3A484476B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F4BAE007-7431-4C2F-AFC4-61C3A484476B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F4BAE007-7431-4C2F-AFC4-61C3A484476B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6E0D5291-463D-4FAA-B21F-1C3DFF745C3F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6E0D5291-463D-4FAA-B21F-1C3DFF745C3F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6E0D5291-463D-4FAA-B21F-1C3DFF745C3F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6E0D5291-463D-4FAA-B21F-1C3DFF745C3F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B4C50851-BE33-4451-A22F-B52A0CEB8EEC}
+	EndGlobalSection
+EndGlobal

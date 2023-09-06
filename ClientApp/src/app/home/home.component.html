@@ -1,0 +1,15 @@
+<h1>Teste .Net com Angular</h1>
+<p>Walmir Machado</p>
+<form [formGroup]="myForm" (ngSubmit)="onSubmit()">
+  <label>Digite o valor:</label>
+  <input type="number" formControlName="valor" />
+  <br />
+  <label>Digite o prazo:</label>
+  <input type="number" formControlName="prazo" />
+  <br />
+  <button type="submit" class="btn btn-primary">Calcular</button>
+  <br/>
+</form>
+<label>Bruto: {{bruto}}</label>
+<br />
+<label>Liquido: {{liquido}}</label>
